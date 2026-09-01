@@ -1,0 +1,5 @@
+numpy==1.26.4
+opencv-contrib-python==4.11.0.86
+mediapipe==0.10.21
+protobuf==4.25.9
+yt-dlp==2025.10.14

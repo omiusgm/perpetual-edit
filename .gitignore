@@ -1,0 +1,59 @@
+# macOS / Python
+.DS_Store
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local configuration and credentials
+config.local.json
+.env
+.env.*
+!.env.example
+cookies*.txt
+*.sqlite*
+*.pem
+*.key
+*.p12
+.netrc
+
+# Generated and personal recordings
+captures/
+runtime/
+test-output/
+references/
+preview-*.jpg
+preview-*.jpeg
+preview-*.png
+preview-*.mp4
+
+# User-supplied media. The original starter cards remain tracked.
+assets/local/
+assets/memes/*
+!assets/memes/README.md
+!assets/memes/starter/
+!assets/memes/starter/README.md
+!assets/memes/starter/*.png
+assets/music/*
+!assets/music/README.md
+
+# Models are downloaded and checksum-verified by tools/download_models.py
+assets/models/*.task
+assets/models/*.tflite
+assets/models/*.download
+
+# Packaging / duplicate launch artifacts
+*.command.zip
+run 2.command
+
+# Prevent accidental commits of downloaded reference media anywhere else
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.mp3
+*.m4a
+*.wav

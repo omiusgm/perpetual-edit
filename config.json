@@ -1,0 +1,2316 @@
+{
+  "camera": {
+    "index": 0,
+    "capture_width": 1280,
+    "capture_height": 720,
+    "processing_width": 720,
+    "processing_height": 405,
+    "target_fps": 24,
+    "mirror": true,
+    "buffer_seconds": 20.0
+  },
+  "window": {
+    "width": 1440,
+    "height": 810,
+    "fullscreen": false,
+    "title": "PERPETUAL // CONFIDENCE BOOSTER"
+  },
+  "analysis": {
+    "auto_enabled": true,
+    "analysis_stride": 2,
+    "pose_mimic_enabled": true,
+    "body_pose_enabled": false,
+    "minimum_buffer_seconds": 20.0,
+    "hand_to_mouth_threshold": 0.72,
+    "minimum_contact_seconds": 0.18,
+    "drink_contact_seconds": 0.82,
+    "cooldown_seconds": 5.5,
+    "post_roll_seconds": 1.0,
+    "periodic_fallback": true,
+    "periodic_seconds": [
+      11.0,
+      13.0,
+      15.0
+    ]
+  },
+  "semantic": {
+    "enabled": true,
+    "default_mode": "smart",
+    "semantic_fps": 5.0,
+    "result_ttl_seconds": 0.75,
+    "gesture_score_threshold": 0.55,
+    "object_score_threshold": 0.42,
+    "gesture_hold_seconds": 0.45,
+    "object_hold_seconds": 0.85,
+    "object_detection_enabled": false,
+    "release_seconds": 0.28,
+    "kiosk_face_dwell_seconds": 0.9,
+    "kiosk_gesture_hold_seconds": 0.45,
+    "kiosk_subject_gap_seconds": 0.35,
+    "gesture_model": "assets/models/gesture_recognizer.task",
+    "object_model": "assets/models/efficientdet_lite0.tflite",
+    "object_allowlist": [
+      "person",
+      "cat",
+      "dog",
+      "bottle",
+      "cup",
+      "wine glass",
+      "cell phone",
+      "backpack",
+      "handbag",
+      "tie"
+    ]
+  },
+  "gesture_playground": {
+    "enabled": true,
+    "interaction_mode": "reactive",
+    "hold_seconds": 0.42,
+    "release_seconds": 0.35,
+    "max_sample_gap_seconds": 0.45,
+    "face_dwell_seconds": 0.65,
+    "prompt_timeout_seconds": 5.0,
+    "reward_seconds": 2.2,
+    "rest_seconds": 0.65,
+    "per_gesture_cooldown_seconds": 3.8,
+    "rolling_window_seconds": 20.0,
+    "unique_gestures_for_edit": 3,
+    "minimum_confidence": 0.52,
+    "seed": 90518,
+    "idle_image": "assets/memes/starter/neutral.png",
+    "gestures": [
+      {
+        "id": "victory",
+        "prompt": "SHOW V SIGN",
+        "title": "PEACE MODE",
+        "caption": "TWO FINGERS // MAXIMUM AURA",
+        "images": [
+          "assets/memes/starter/victory.png"
+        ],
+        "hold_seconds": 0.30,
+        "accent_bgr": [
+          103,
+          255,
+          114
+        ]
+      },
+      {
+        "id": "smile",
+        "prompt": "SMILE NATURALLY",
+        "title": "HAPPY CAT",
+        "caption": "SMILE DETECTED // GOOD VIBES",
+        "images": [
+          "assets/memes/starter/smile.png"
+        ],
+        "hold_seconds": 0.30,
+        "accent_bgr": [
+          103,
+          255,
+          114
+        ]
+      },
+      {
+        "id": "shaka",
+        "prompt": "SHOW CALL-ME SIGN",
+        "title": "CAT ON CALL",
+        "caption": "HELLO // MEME LINE CONNECTED",
+        "images": [
+          "assets/memes/starter/shaka.png"
+        ],
+        "hold_seconds": 0.30,
+        "accent_bgr": [
+          245,
+          223,
+          65
+        ]
+      },
+      {
+        "id": "point",
+        "prompt": "POINT ONE FINGER UP",
+        "title": "ACTUALLY.EXE",
+        "caption": "ONE IMPORTANT THOUGHT DETECTED",
+        "images": [
+          "assets/memes/starter/point.png"
+        ],
+        "hold_seconds": 0.30,
+        "accent_bgr": [
+          74,
+          184,
+          255
+        ]
+      },
+      {
+        "id": "two_point",
+        "prompt": "POINT FINGERS TOGETHER",
+        "title": "PLEASE MODE",
+        "caption": "SOCIAL CONFIDENCE // CRITICAL",
+        "images": [
+          "assets/memes/starter/two_point.png"
+        ],
+        "hold_seconds": 0.30,
+        "accent_bgr": [
+          226,
+          76,
+          178
+        ]
+      },
+      {
+        "id": "shhh",
+        "prompt": "FINGER TO LIPS",
+        "title": "CLASSIFIED CAT",
+        "caption": "SHHH // LORE UNDER EMBARGO",
+        "images": [
+          "assets/memes/starter/shhh.png"
+        ],
+        "hold_seconds": 0.34,
+        "accent_bgr": [
+          245,
+          223,
+          65
+        ]
+      },
+      {
+        "id": "cover_mouth",
+        "prompt": "COVER YOUR MOUTH",
+        "title": "LIVE REACTION",
+        "caption": "GASP DETECTED // TEA CONFIRMED",
+        "images": [
+          "assets/memes/starter/cover_mouth.png"
+        ],
+        "hold_seconds": 0.34,
+        "accent_bgr": [
+          226,
+          76,
+          178
+        ]
+      },
+      {
+        "id": "fist",
+        "prompt": "MAKE A FIST",
+        "title": "TINY VIOLENCE",
+        "caption": "PAW PROTOCOL // ACTIVATED",
+        "images": [
+          "assets/memes/starter/fist.png"
+        ],
+        "hold_seconds": 0.34,
+        "accent_bgr": [
+          74,
+          184,
+          255
+        ]
+      },
+      {
+        "id": "hands_head",
+        "prompt": "HANDS ABOVE YOUR HEAD",
+        "title": "SYSTEM OVERLOAD",
+        "caption": "BOTH HANDS // ZERO SOLUTIONS",
+        "images": [
+          "assets/memes/starter/hands_head.png"
+        ],
+        "hold_seconds": 0.30,
+        "accent_bgr": [
+          84,
+          225,
+          255
+        ]
+      },
+      {
+        "id": "dance",
+        "prompt": "RAISE TWO PALMS",
+        "title": "CAT CLUB ONLINE",
+        "caption": "ASYMMETRIC PALMS // BEAT FOUND",
+        "images": [
+          "assets/memes/starter/dance.png"
+        ],
+        "hold_seconds": 0.30,
+        "accent_bgr": [
+          103,
+          255,
+          114
+        ]
+      },
+      {
+        "id": "open_palm",
+        "prompt": "SHOW OPEN PALM",
+        "title": "WAIT.EXE",
+        "caption": "HOLD ON // CAMERA IS COOKING",
+        "images": [
+          "assets/memes/starter/open_palm.png"
+        ],
+        "hold_seconds": 0.30,
+        "accent_bgr": [
+          84,
+          225,
+          255
+        ]
+      },
+      {
+        "id": "thinking",
+        "prompt": "HAND TO CHIN // THINK",
+        "title": "HMM MODE",
+        "caption": "SUSPICIOUSLY DEEP THOUGHT",
+        "images": [
+          "assets/memes/starter/thinking.png"
+        ],
+        "hold_seconds": 0.30,
+        "accent_bgr": [
+          187,
+          232,
+          103
+        ]
+      },
+      {
+        "id": "pointing",
+        "prompt": "POINT TO THE SIDE",
+        "title": "SOURCE: TRUST ME",
+        "caption": "FULL ARM ARGUMENT // LOCKED",
+        "images": [
+          "assets/memes/starter/pointing.png"
+        ],
+        "hold_seconds": 0.28,
+        "accent_bgr": [
+          72,
+          214,
+          255
+        ]
+      },
+      {
+        "id": "soy",
+        "prompt": "OPEN MOUTH WIDE",
+        "title": "SOY MODE",
+        "caption": "MOUTH OPEN // OPINION DETECTED",
+        "images": [
+          "assets/memes/starter/soy.png"
+        ],
+        "hold_seconds": 0.34,
+        "accent_bgr": [
+          226,
+          76,
+          178
+        ]
+      },
+      {
+        "id": "huh",
+        "prompt": "WIDE EYES + OPEN MOUTH",
+        "title": "HUH.EXE",
+        "caption": "CONFUSION // FULL RESOLUTION",
+        "images": [
+          "assets/memes/starter/huh.png"
+        ],
+        "hold_seconds": 0.34,
+        "accent_bgr": [
+          74,
+          184,
+          255
+        ]
+      },
+      {
+        "id": "reddit",
+        "prompt": "HAND TO CHEST",
+        "title": "PERSONAL LORE",
+        "caption": "HAND ON CHEST // ESSAY INCOMING",
+        "images": [
+          "assets/memes/starter/reddit.png"
+        ],
+        "hold_seconds": 0.28,
+        "accent_bgr": [
+          187,
+          232,
+          103
+        ]
+      },
+      {
+        "id": "arms_up",
+        "prompt": "RAISE BOTH HANDS",
+        "title": "PEAK CINEMA",
+        "caption": "BOTH ARMS UP // AURA OVERFLOW",
+        "images": [
+          "assets/memes/starter/arms_up.png"
+        ],
+        "hold_seconds": 0.28,
+        "accent_bgr": [
+          84,
+          225,
+          255
+        ]
+      },
+      {
+        "id": "smug",
+        "prompt": "TILT YOUR HEAD",
+        "title": "SMUG ANGLE",
+        "caption": "HEAD TILT // ABSOLUTE CONFIDENCE",
+        "images": [
+          "assets/memes/starter/smug.png"
+        ],
+        "hold_seconds": 0.34,
+        "accent_bgr": [
+          245,
+          223,
+          65
+        ]
+      },
+      {
+        "id": "side_eye",
+        "prompt": "TURN YOUR HEAD",
+        "title": "SIDE-EYE LOCK",
+        "caption": "SILENT JUDGMENT // ACQUIRED",
+        "images": [
+          "assets/memes/starter/side_eye.png"
+        ],
+        "hold_seconds": 0.38,
+        "accent_bgr": [
+          187,
+          232,
+          103
+        ]
+      }
+    ]
+  },
+  "director": {
+    "default_options": {
+      "action_stories": true,
+      "object_memes": false,
+      "freestyle_edits": true,
+      "culture_themes": true,
+      "random_per_cycle": true
+    },
+    "route_timeout_seconds": 12.0,
+    "freestyle_delay_seconds": 4.0,
+    "seed": 90517
+  },
+  "qwen_director": {
+    "enabled": false,
+    "relay_command": "",
+    "timeout_seconds": 12.0,
+    "minimum_interval_seconds": 15.0,
+    "context_window_seconds": 9.0,
+    "result_ttl_seconds": 12.0,
+    "cache_ttl_seconds": 45.0,
+    "minimum_distinct_signals": 2,
+    "object_sample_interval_seconds": 0.9,
+    "object_min_confidence": 0.62,
+    "packs": [
+      {
+        "id": "fake_call_arc",
+        "match_label": "shaka hand and cell phone create a fake call meme",
+        "title": "CALL CENTER // HANDSET FOUND",
+        "subtitle": "QWEN COMBINED TWO SIGNALS",
+        "preset_pool": [
+          "glass",
+          "match_flow",
+          "velocity"
+        ],
+        "focus_label": "cell phone",
+        "sound_style": "phone",
+        "accent_bgr": [
+          255,
+          214,
+          64
+        ],
+        "captions": [
+          "SETUP // PHONE IN FRAME",
+          "INTENT // SHAKA CONNECTS",
+          "ACTION // CALL ACCEPTED",
+          "REACTION // LINE GOES HARD",
+          "PAYOFF // ROAMING AURA"
+        ]
+      },
+      {
+        "id": "pet_boss",
+        "match_label": "cat or dog with pointing creates a pet boss meme",
+        "title": "BOSS ENTERED // HUMAN DEMOTED",
+        "subtitle": "PET PLUS GESTURE STORY",
+        "preset_pool": [
+          "subject_boomerang",
+          "pulse_chain",
+          "aspect_orbit",
+          "fluid_inception",
+          "portal",
+          "fruta"
+        ],
+        "focus_label": "pet",
+        "sound_style": "pet",
+        "accent_bgr": [
+          91,
+          173,
+          255
+        ],
+        "captions": [
+          "SETUP // HUMAN ON CAMERA",
+          "INTENT // POINT OFFSCREEN",
+          "ACTION // PET REVEAL",
+          "REACTION // NEW MANAGEMENT",
+          "PAYOFF // PET OWNS THE FEED"
+        ]
+      },
+      {
+        "id": "beverage_lore",
+        "match_label": "bottle cup or drink with thinking creates beverage lore meme",
+        "title": "BEVERAGE LORE // DEEP ANALYSIS",
+        "subtitle": "PROP PLUS THINKING SIGNAL",
+        "preset_pool": [
+          "wave_surge",
+          "sip",
+          "mente"
+        ],
+        "focus_label": "drink",
+        "sound_style": "beverage",
+        "accent_bgr": [
+          235,
+          223,
+          65
+        ],
+        "captions": [
+          "SETUP // DRINK DETECTED",
+          "INTENT // THOUGHT PROCESS",
+          "ACTION // SIP THEORY",
+          "REACTION // LORE EXPANDS",
+          "PAYOFF // BEVERAGE INTELLECT"
+        ]
+      },
+      {
+        "id": "ceo_patch",
+        "match_label": "tie with smug point or victory creates chief executive meme",
+        "title": "CEO PATCH // CONFIDENCE UPDATE",
+        "subtitle": "OUTFIT PLUS ATTITUDE",
+        "preset_pool": [
+          "gigachad",
+          "final_form",
+          "fluid_inception",
+          "bootleg"
+        ],
+        "focus_label": "tie",
+        "sound_style": "energy",
+        "accent_bgr": [
+          235,
+          223,
+          65
+        ],
+        "captions": [
+          "SETUP // FORMAL MODE",
+          "INTENT // CONFIDENCE LOADS",
+          "ACTION // EXECUTIVE SIGNAL",
+          "REACTION // BOARD APPROVES",
+          "PAYOFF // CEO PATCH INSTALLED"
+        ]
+      },
+      {
+        "id": "main_character",
+        "match_label": "smug side eye point or victory create main character meme",
+        "title": "MAIN CHARACTER // CAMERA AGREES",
+        "subtitle": "POSE SEQUENCE MATCH",
+        "preset_pool": [
+          "gigachad",
+          "match_flow",
+          "subject_boomerang",
+          "glide_chain",
+          "bootleg",
+          "fluid_inception",
+          "ela"
+        ],
+        "focus_label": "subject",
+        "sound_style": "energy",
+        "accent_bgr": [
+          245,
+          223,
+          65
+        ],
+        "captions": [
+          "SETUP // NEUTRAL FRAME",
+          "INTENT // ANGLE CHANGES",
+          "ACTION // AURA LOCK",
+          "REACTION // CAMERA AGREES",
+          "PAYOFF // MAIN CHARACTER"
+        ]
+      },
+      {
+        "id": "reaction_overload",
+        "match_label": "huh soy cover mouth fist dance or arms up create reaction meme",
+        "title": "REACTION OVERLOAD // SIGNAL PEAK",
+        "subtitle": "FACE PLUS BODY COMBO",
+        "preset_pool": [
+          "gigachad",
+          "pulse_chain",
+          "glide_chain",
+          "arch_chain",
+          "clima",
+          "nunca"
+        ],
+        "focus_label": "subject",
+        "sound_style": "arcade",
+        "accent_bgr": [
+          244,
+          93,
+          255
+        ],
+        "captions": [
+          "SETUP // NORMAL PERSON",
+          "INTENT // REACTION BUILDS",
+          "ACTION // SIGNAL PEAK",
+          "REACTION // FRAME OVERLOAD",
+          "PAYOFF // EMOTION BUFFER FULL"
+        ]
+      },
+      {
+        "id": "smart_point",
+        "match_label": "glasses thinking or smug with pointing create smart detective meme",
+        "title": "SMART DETECTIVE // CASE CLOSED",
+        "subtitle": "POINT PLUS BRAIN SIGNAL",
+        "preset_pool": [
+          "mente",
+          "final_form"
+        ],
+        "focus_label": "hand",
+        "sound_style": "arcade",
+        "accent_bgr": [
+          235,
+          66,
+          218
+        ],
+        "captions": [
+          "SETUP // EVIDENCE FOUND",
+          "INTENT // THINKING MODE",
+          "ACTION // POINT CONFIRMS",
+          "REACTION // CASE SOLVED",
+          "PAYOFF // IQ UNREASONABLE"
+        ]
+      },
+      {
+        "id": "chaos_combo",
+        "match_label": "two different gestures create a chaotic combo meme",
+        "title": "COMBO BUFFER // CHAOS CERTIFIED",
+        "subtitle": "MULTIPLE SIGNALS MATCHED",
+        "preset_pool": [
+          "wave_surge",
+          "pulse_chain",
+          "atencao",
+          "nunca",
+          "fruta"
+        ],
+        "focus_label": "subject",
+        "sound_style": "arcade",
+        "accent_bgr": [
+          44,
+          213,
+          255
+        ],
+        "captions": [
+          "SETUP // FIRST SIGNAL",
+          "INTENT // SECOND SIGNAL",
+          "ACTION // COMBO LOCKED",
+          "REACTION // LOGIC OPTIONAL",
+          "PAYOFF // CHAOS CERTIFIED"
+        ]
+      }
+    ]
+  },
+  "association": {
+    "enabled": false,
+    "analysis_fps": 1.25,
+    "result_ttl_seconds": 2.5,
+    "hold_seconds": 0.7,
+    "release_seconds": 0.9,
+    "cooldown_seconds": 7.0,
+    "popup_duration_seconds": 3.4,
+    "helper_source": "tools/vision_semantics.swift",
+    "helper_binary": "runtime/tools/vision_semantics",
+    "profiles": [
+      {
+        "id": "white_monster",
+        "title": "WHITE MONSTER // GYM AURA",
+        "subtitle": "MONSTER ENERGY ULTRA WHITE",
+        "text_any": [
+          "monster",
+          "ultra white",
+          "monster energy"
+        ],
+        "label_any": [],
+        "preset_pool": [
+          "bootleg",
+          "velocity"
+        ],
+        "focus_label": "brand_white_monster",
+        "sound_style": "energy",
+        "culture_theme": false,
+        "accent_bgr": [
+          235,
+          235,
+          235
+        ],
+        "captions": [
+          "SCAN // WHITE MONSTER FOUND",
+          "CONTEXT // GYM AURA",
+          "ACTION // ZERO SUGAR POWER",
+          "REACTION // HEART RATE OPTIONAL",
+          "PAYOFF // ULTRA WHITE MAIN CHARACTER"
+        ]
+      },
+      {
+        "id": "guinness_pub",
+        "title": "PUB MODE // GUINNESS",
+        "subtitle": "DRAUGHT LABEL MATCH",
+        "text_any": [
+          "guinness",
+          "draught"
+        ],
+        "label_any": [],
+        "preset_pool": [
+          "fruta",
+          "nunca"
+        ],
+        "focus_label": "brand_guinness",
+        "sound_style": "pub",
+        "culture_theme": true,
+        "accent_bgr": [
+          72,
+          194,
+          74
+        ],
+        "captions": [
+          "SCAN // GUINNESS FOUND",
+          "CONTEXT // PUB AMBIENCE",
+          "ACTION // STOUT PROTOCOL",
+          "REACTION // FOAM LOCKED",
+          "PAYOFF // PERFECT PINT ENERGY"
+        ]
+      },
+      {
+        "id": "desperados_sunset",
+        "title": "TEQUILA SUNSET // DESPERADOS",
+        "subtitle": "PRODUCT LABEL MATCH",
+        "text_any": [
+          "desperados"
+        ],
+        "label_any": [],
+        "preset_pool": [
+          "atencao",
+          "ela"
+        ],
+        "focus_label": "brand_desperados",
+        "sound_style": "latin",
+        "culture_theme": true,
+        "accent_bgr": [
+          44,
+          213,
+          255
+        ],
+        "captions": [
+          "SCAN // DESPERADOS FOUND",
+          "CONTEXT // TEQUILA SUNSET",
+          "ACTION // FIESTA BUFFER",
+          "REACTION // BRASS INTENSIFIES",
+          "PAYOFF // GOLDEN HOUR UNLOCKED"
+        ]
+      },
+      {
+        "id": "asahi_arcade",
+        "title": "TOKYO ARCADE // ASAHI",
+        "subtitle": "SUPER DRY LABEL MATCH",
+        "text_any": [
+          "asahi",
+          "super dry",
+          "sapporo",
+          "kirin",
+          "ramune",
+          "pocky"
+        ],
+        "label_any": [
+          "sushi",
+          "ramen",
+          "origami"
+        ],
+        "preset_pool": [
+          "portal",
+          "glass"
+        ],
+        "focus_label": "brand_asahi",
+        "sound_style": "arcade",
+        "culture_theme": true,
+        "accent_bgr": [
+          235,
+          66,
+          218
+        ],
+        "captions": [
+          "SCAN // JAPAN PROP FOUND",
+          "CONTEXT // TOKYO ARCADE",
+          "ACTION // KANPAI PROTOCOL",
+          "REACTION // PIXEL AURA",
+          "PAYOFF // SUPER DRY MAIN CHARACTER"
+        ]
+      },
+      {
+        "id": "fiesta_label",
+        "title": "FIESTA MODE // LABEL MATCH",
+        "subtitle": "MODELO / CORONA / TECATE",
+        "text_any": [
+          "modelo",
+          "corona extra",
+          "dos equis",
+          "tecate",
+          "mexico",
+          "méxico"
+        ],
+        "label_any": [
+          "taco",
+          "sombrero",
+          "maracas"
+        ],
+        "preset_pool": [
+          "atencao",
+          "mente"
+        ],
+        "focus_label": "brand_fiesta",
+        "sound_style": "latin",
+        "culture_theme": true,
+        "accent_bgr": [
+          20,
+          188,
+          255
+        ],
+        "captions": [
+          "SCAN // FIESTA PROP FOUND",
+          "CONTEXT // LABEL NOT FACE",
+          "ACTION // BRASS DROP",
+          "REACTION // SUNSET ENERGY",
+          "PAYOFF // PARTY MODE UNLOCKED"
+        ]
+      },
+      {
+        "id": "pet_takeover",
+        "title": "PET TAKEOVER // CAMERA LOST",
+        "subtitle": "CAT OR DOG ENTERED FRAME",
+        "text_any": [],
+        "label_any": [
+          "cat",
+          "dog"
+        ],
+        "preset_pool": [
+          "subject_boomerang",
+          "pulse_chain",
+          "aspect_orbit",
+          "portal",
+          "fruta"
+        ],
+        "focus_label": "pet",
+        "sound_style": "pet",
+        "culture_theme": false,
+        "accent_bgr": [
+          91,
+          173,
+          255
+        ],
+        "captions": [
+          "SCAN // PET DETECTED",
+          "CONTEXT // UNEXPECTED GUEST",
+          "ACTION // PET TAKEOVER",
+          "REACTION // CAMERA PRIVILEGES REVOKED",
+          "PAYOFF // PET WINS AGAIN"
+        ]
+      },
+      {
+        "id": "phone_interrupt",
+        "title": "PHONE ARC // PLOT DEVICE",
+        "subtitle": "CELL PHONE IN FRAME",
+        "text_any": [],
+        "label_any": [
+          "cell phone",
+          "smartphone",
+          "mobile phone"
+        ],
+        "minimum_confidence": 0.62,
+        "preset_pool": [
+          "match_flow",
+          "glass",
+          "velocity"
+        ],
+        "focus_label": "cell phone",
+        "sound_style": "phone",
+        "culture_theme": false,
+        "accent_bgr": [
+          255,
+          214,
+          64
+        ],
+        "captions": [
+          "SCAN // PHONE FOUND",
+          "CONTEXT // NOTIFICATION ARC",
+          "ACTION // SCREEN CHECK",
+          "REACTION // ATTENTION STOLEN",
+          "PAYOFF // PLOT DEVICE CONFIRMED"
+        ]
+      },
+      {
+        "id": "ceo_tie",
+        "title": "CEO MODE // TIE DETECTED",
+        "subtitle": "CORPORATE AURA EXCEEDS LIMIT",
+        "text_any": [],
+        "label_any": [
+          "tie"
+        ],
+        "preset_pool": [
+          "gigachad",
+          "sip",
+          "final_form"
+        ],
+        "focus_label": "tie",
+        "sound_style": "energy",
+        "culture_theme": false,
+        "accent_bgr": [
+          235,
+          223,
+          65
+        ],
+        "captions": [
+          "SCAN // TIE DETECTED",
+          "CONTEXT // BOARDROOM BUFFER",
+          "ACTION // QUARTERLY STARE",
+          "REACTION // SHAREHOLDERS NERVOUS",
+          "PAYOFF // CEO AURA CONFIRMED"
+        ]
+      },
+      {
+        "id": "beverage_unknown",
+        "title": "MYSTERY BEVERAGE // ANALYZING",
+        "subtitle": "NO BRAND CLAIM",
+        "text_any": [],
+        "label_any": [
+          "bottle",
+          "cup",
+          "wine glass"
+        ],
+        "preset_pool": [
+          "wave_surge",
+          "sip",
+          "clima"
+        ],
+        "focus_label": "drink",
+        "sound_style": "beverage",
+        "culture_theme": false,
+        "accent_bgr": [
+          244,
+          223,
+          65
+        ],
+        "captions": [
+          "SCAN // BEVERAGE FOUND",
+          "CONTEXT // BRAND UNKNOWN",
+          "ACTION // SIP PROTOCOL",
+          "REACTION // HYDRATION UNVERIFIED",
+          "PAYOFF // MYSTERY DRINK AURA"
+        ]
+      }
+    ]
+  },
+  "audio": {
+    "analyzer_enabled": false,
+    "analyzer_volume": 0.08,
+    "edits_enabled": true,
+    "edit_volume": 0.82
+  },
+  "presets": [
+    {
+      "id": "sip",
+      "title": "SIP.EXE",
+      "track_id": "metamorphosis",
+      "track_title": "Metamorphosis",
+      "visual_signature": "calm_intro_exposure_dip_sigma_zoom",
+      "style": "sip",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 9.3,
+      "intro_story_seconds": 2.183,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/Patrick Bateman Edit - Metamorphosis_720p60.mp4",
+      "impact_times_seconds": [
+        2.183,
+        3.001,
+        3.825,
+        4.643,
+        5.461,
+        6.274,
+        7.092,
+        7.91,
+        8.728
+      ],
+      "accent_bgr": [
+        244,
+        223,
+        65
+      ],
+      "captions": [
+        "BEVERAGE INPUT DETECTED",
+        "SIGMA REFERENCE ACQUIRED",
+        "STATUS: UNREASONABLY SMART"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        2.183,
+        7.092
+      ]
+    },
+    {
+      "id": "crunch",
+      "title": "AURA_DROP",
+      "track_id": "aura-hyper-slowed",
+      "track_title": "AURA (Hyper Slowed)",
+      "visual_signature": "continuous_mask_morph_radial_sweep",
+      "style": "crunch",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 18.5,
+      "duration_seconds": 6.384,
+      "media_start_seconds": 6.74,
+      "music_file": "assets/local/music/AURA!(hyper slowed)💫_#funk #phonk #music #song #foryou #bass_720p.mp4",
+      "impact_times_seconds": [
+        0.028,
+        1.505,
+        2.687,
+        3.276,
+        3.874,
+        5.056,
+        5.992,
+        6.234
+      ],
+      "accent_bgr": [
+        226,
+        76,
+        178
+      ],
+      "captions": [
+        "CRUNCH CONFIRMED // AURA RISING",
+        "BASS RESPONSE: MAXIMUM",
+        "SNACK AURA // UNCONTAINED"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        2.687,
+        5.056
+      ]
+    },
+    {
+      "id": "velocity",
+      "title": "MONTAGEM.EXE",
+      "track_id": "montagem-bandido",
+      "track_title": "Montagem Bandido",
+      "visual_signature": "flyin_whip_black_stutter",
+      "style": "velocity",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 9.08,
+      "media_start_seconds": 4.4,
+      "music_file": "assets/local/music/a7f6ay.mp4",
+      "impact_times_seconds": [
+        1.0,
+        1.501,
+        1.999,
+        2.498,
+        3.498,
+        3.995,
+        4.493,
+        4.991,
+        5.492,
+        5.989,
+        6.489,
+        6.986
+      ],
+      "transition_lead_seconds": 0.1,
+      "blackout_windows_seconds": [
+        [
+          2.667,
+          2.834
+        ]
+      ],
+      "clean_cut_times_seconds": [
+        2.834
+      ],
+      "accent_bgr": [
+        226,
+        230,
+        232
+      ],
+      "captions": [
+        "SUBJECT EDITED LIKE A SUPERCAR",
+        "WHIP VECTOR // LOCKED",
+        "FINAL ANGLE // ABSURDLY CINEMATIC"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        1.0,
+        6.986
+      ]
+    },
+    {
+      "id": "mente",
+      "title": "MENTE_MA.EXE",
+      "track_id": "mente-ma",
+      "track_title": "Mente Ma (Slowed)",
+      "visual_signature": "freeze_cutout_zoom_smear_orbit",
+      "style": "mente",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 12.7,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/nmspqb.mp4",
+      "impact_times_seconds": [
+        4.891,
+        5.41,
+        5.928,
+        6.446,
+        6.963,
+        7.482,
+        8.001,
+        8.519,
+        9.036,
+        9.554,
+        10.073
+      ],
+      "transition_lead_seconds": 0.075,
+      "clean_cut_times_seconds": [
+        10.5
+      ],
+      "cutout_window_seconds": [
+        4.333,
+        4.833
+      ],
+      "accent_bgr": [
+        220,
+        224,
+        226
+      ],
+      "captions": [
+        "MENTE MA // SUBJECT LOCKED",
+        "VELOCITY STACK // 115.8 BPM",
+        "FINAL ORBIT // HOLD"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        4.891,
+        10.5
+      ]
+    },
+    {
+      "id": "clima",
+      "title": "CLIMA_GHOST.EXE",
+      "track_id": "clima-lindo",
+      "track_title": "CLIMA LINDO (Extreme Slowed) — GXMZ & Repsaj",
+      "visual_signature": "vertical_ghost_stretch_slow_closeup",
+      "style": "clima",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 14.45,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/2mar5n.mp4",
+      "impact_times_seconds": [
+        4.676,
+        5.384,
+        6.092,
+        6.795,
+        7.503,
+        8.211,
+        8.913,
+        9.622,
+        10.324
+      ],
+      "transition_lead_seconds": 0.04,
+      "clean_cut_times_seconds": [
+        11.033
+      ],
+      "ghost_window_seconds": [
+        3.467,
+        3.967
+      ],
+      "stretch_window_seconds": [
+        4.533,
+        4.667
+      ],
+      "accent_bgr": [
+        212,
+        231,
+        235
+      ],
+      "captions": [
+        "VERTICAL ECHO // ACQUIRED",
+        "CLIMATE CONTROL // UNSTABLE",
+        "CLOSE-UP // EXTREME SLOWED"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        4.676,
+        11.033
+      ]
+    },
+    {
+      "id": "bootleg",
+      "title": "DARK_TRIAD.EXE",
+      "track_id": "bootleg-mov-dark-triad-joardan-barret",
+      "track_title": "bootleg_mov (dark triad x joardan barret)",
+      "visual_signature": "temporal_echo_black_cutouts_rgb_drop_slow_final",
+      "style": "bootleg",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 15.03,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/1ag40l.mp4",
+      "impact_times_seconds": [
+        7.381,
+        8.095,
+        8.803,
+        9.512,
+        10.215,
+        10.923,
+        11.637,
+        12.345
+      ],
+      "transition_lead_seconds": 0.145,
+      "clean_cut_times_seconds": [
+        3.067,
+        3.767,
+        4.467,
+        12.9
+      ],
+      "echo_window_seconds": [
+        5.033,
+        5.967
+      ],
+      "fade_to_black_window_seconds": [
+        5.967,
+        6.133
+      ],
+      "blackout_windows_seconds": [
+        [
+          6.167,
+          6.533
+        ]
+      ],
+      "cutout_window_seconds": [
+        6.567,
+        7.2
+      ],
+      "accent_bgr": [
+        210,
+        216,
+        230
+      ],
+      "captions": [
+        "TEMPORAL ECHO // BUILDING",
+        "DARK TRIAD // DROP LOCKED",
+        "FINAL SUBJECT // SLOW DRIFT"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        7.381,
+        12.9
+      ]
+    },
+    {
+      "id": "atencao",
+      "title": "ATENCAO_WHIP.EXE",
+      "track_id": "atencao-ultra-slowed-reverb-leoseven",
+      "track_title": "Atenção! (ULTRA SLOWED + REVERB) — Leoseven",
+      "visual_signature": "alternating_lateral_whip_chain_payoff_closeup",
+      "style": "atencao",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 15.467,
+      "intro_story_seconds": 4.771,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/o8uwnb.mp4",
+      "impact_times_seconds": [
+        4.771,
+        5.442,
+        6.1,
+        6.758,
+        7.417,
+        8.081,
+        8.74,
+        9.398,
+        10.064,
+        10.724,
+        11.382,
+        12.043
+      ],
+      "transition_lead_seconds": 0.095,
+      "clean_cut_times_seconds": [
+        12.707
+      ],
+      "accent_bgr": [
+        84,
+        225,
+        255
+      ],
+      "captions": [
+        "ATTENTION VECTOR // APPROACHING",
+        "LATERAL WHIP CHAIN // LOCKED",
+        "PAYOFF CLOSE-UP // HOLD"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        4.771,
+        12.707
+      ]
+    },
+    {
+      "id": "ela",
+      "title": "ELA_ANGLES.EXE",
+      "track_id": "ela-joga-na-hora-slowed",
+      "track_title": "Ela Joga na Hora (slowed) — MC Pogba & DJ Guih Da ZO",
+      "visual_signature": "clean_angular_hardcut_ladder_extreme_hold",
+      "style": "ela",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 9.5,
+      "intro_story_seconds": 4.637,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/y9hweg.mp4",
+      "impact_times_seconds": [
+        4.637,
+        5.212,
+        5.802,
+        6.38,
+        6.945,
+        7.542
+      ],
+      "clean_cut_times_seconds": [
+        8.104
+      ],
+      "accent_bgr": [
+        104,
+        231,
+        177
+      ],
+      "captions": [
+        "ANGLE LADDER // CLEAN CUTS ONLY",
+        "NO FX // SUBJECT DOES THE WORK",
+        "EXTREME CLOSE-UP // FREEZE"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        4.637,
+        8.104
+      ]
+    },
+    {
+      "id": "fruta",
+      "title": "FRUTA_POV.EXE",
+      "track_id": "fruta-baixa-super-slowed",
+      "track_title": "FRUTA BAIXA (Super Slowed) — Fyex, Scythermane & LXKERSON",
+      "visual_signature": "gesture_story_scale_jumps_single_doubletime_portrait",
+      "style": "fruta",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 14.7,
+      "intro_story_seconds": 4.823,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/8tlrj5.mp4",
+      "impact_times_seconds": [
+        4.823,
+        5.412,
+        6.008,
+        6.594,
+        7.187,
+        7.782,
+        8.378,
+        8.965,
+        9.557,
+        10.15,
+        10.749,
+        11.335,
+        11.928,
+        12.529
+      ],
+      "clean_cut_times_seconds": [
+        9.262,
+        13.119
+      ],
+      "accent_bgr": [
+        239,
+        173,
+        72
+      ],
+      "captions": [
+        "POV ACTION // NARRATIVE LOCK",
+        "SCALE JUMPS // DOUBLE-TIME BURST",
+        "PORTRAIT PAYOFF // HOLD"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        4.823,
+        13.119
+      ]
+    },
+    {
+      "id": "nunca",
+      "title": "NUNCA_STUTTER.EXE",
+      "track_id": "nunca-muda-scythermane-nxght-mc-fabinho",
+      "track_title": "NUNCA MUDA? — Scythermane, NXGHT! & MC Fabinho da Osk",
+      "visual_signature": "clone_spin_drop_machinegun_deceleration_orbit",
+      "style": "nunca",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 16.133,
+      "intro_story_seconds": 3.633,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/pnsorv.mp4",
+      "impact_times_seconds": [
+        3.633,
+        6.867,
+        7.333,
+        7.833,
+        8.3,
+        8.467,
+        8.7,
+        8.8,
+        8.9,
+        9.1,
+        9.2,
+        9.3,
+        9.4,
+        9.5,
+        9.6,
+        9.7,
+        9.8,
+        9.9,
+        10.0,
+        10.1,
+        10.2,
+        10.3,
+        10.4,
+        10.5,
+        10.6,
+        10.7,
+        10.8,
+        10.9,
+        11.0,
+        11.4,
+        11.867,
+        12.333,
+        12.833,
+        13.3
+      ],
+      "clean_cut_times_seconds": [
+        13.767
+      ],
+      "effect_windows_seconds": {
+        "clone_drop": [
+          6.767,
+          6.867
+        ],
+        "machine_gun": [
+          9.1,
+          11.0
+        ],
+        "final_orbit": [
+          13.767,
+          16.133
+        ]
+      },
+      "accent_bgr": [
+        187,
+        232,
+        103
+      ],
+      "captions": [
+        "CLONE DROP // MULTIPLY",
+        "10 FPS STUTTER // OVERDRIVE",
+        "DECELERATION // FINAL ORBIT"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        9.1,
+        13.767
+      ]
+    },
+    {
+      "id": "portal",
+      "title": "PORTAL_THROW.EXE",
+      "track_id": "esse-cara-sayfalse-scythermane-trxshbxy",
+      "track_title": "ESSE CARA! — Sayfalse, Scythermane & TRXSHBXY",
+      "visual_signature": "arc_throw_tiles_double_portal_vortex_dollyout",
+      "style": "portal",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 10.533,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/aprh5p.mp4",
+      "impact_times_seconds": [
+        1.22,
+        3.167,
+        4.167,
+        4.633,
+        5.2,
+        6.033,
+        6.7,
+        7.733
+      ],
+      "clean_cut_times_seconds": [
+        9.2
+      ],
+      "effect_windows_seconds": {
+        "throw": [
+          0.167,
+          1.22
+        ],
+        "orbit": [
+          1.22,
+          3.067
+        ],
+        "tiles": [
+          3.067,
+          3.167
+        ],
+        "rotation_pulse": [
+          3.767,
+          3.833
+        ],
+        "portal_1": [
+          6.333,
+          6.7
+        ],
+        "portal_2": [
+          7.6,
+          7.733
+        ],
+        "elastic": [
+          7.967,
+          8.2
+        ],
+        "vortex": [
+          8.5,
+          8.567
+        ],
+        "foreground_wipe": [
+          8.833,
+          9.2
+        ],
+        "final_dolly": [
+          9.2,
+          10.533
+        ]
+      },
+      "accent_bgr": [
+        105,
+        196,
+        255
+      ],
+      "captions": [
+        "SUBJECT THROW // LANDING",
+        "RECTANGLE PORTAL // MATCH",
+        "FINAL DOLLY // EXIT"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        6.333,
+        9.2
+      ]
+    },
+    {
+      "id": "glass",
+      "title": "GLASS_CITIES.EXE",
+      "track_id": "glass-cities-orivn",
+      "track_title": "Glass Cities — ORIVN",
+      "visual_signature": "roll_salvo_edge_outline_mirror_bridge_crash_zoom",
+      "style": "glass",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 11.933,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/wr4f3j.mp4",
+      "impact_times_seconds": [
+        0.267,
+        0.567,
+        0.833,
+        1.2,
+        1.933,
+        2.633,
+        2.967,
+        3.333,
+        3.667,
+        3.9,
+        5.167,
+        5.5,
+        6.533,
+        7.1,
+        8.233,
+        9.0
+      ],
+      "clean_cut_times_seconds": [
+        10.233
+      ],
+      "effect_windows_seconds": {
+        "roll_salvo": [
+          0.0,
+          1.5
+        ],
+        "edge_outline": [
+          4.033,
+          5.167
+        ],
+        "mirror_bridge": [
+          7.533,
+          8.167
+        ],
+        "crash_zoom": [
+          10.233,
+          11.067
+        ],
+        "final_hold": [
+          11.067,
+          11.933
+        ]
+      },
+      "accent_bgr": [
+        242,
+        192,
+        91
+      ],
+      "captions": [
+        "ROTATION SCAN // RAPID SALVO",
+        "EDGE GHOST // CHARGING",
+        "MIRROR BRIDGE // CRASH ZOOM"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        4.033,
+        7.533
+      ]
+    },
+    {
+      "id": "aspect_orbit",
+      "title": "ASPECT_ORBIT.EXE",
+      "track_id": "shake-it-to-the-max-fly-remix",
+      "track_title": "Shake It To The Max (FLY) [Remix] — MOLIY, Silent Addy, Skillibeng & Shenseea",
+      "visual_signature": "animated_letterbox_action_match_twin_twirl_calm_hold",
+      "style": "aspect_orbit",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 8.356,
+      "intro_story_seconds": 1.1,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/instagram_DKM3m3sspOe.mp4",
+      "impact_times_seconds": [
+        1.133,
+        1.867,
+        2.533,
+        3.1,
+        3.7,
+        4.3,
+        4.933,
+        5.533,
+        6.2,
+        6.733,
+        7.333
+      ],
+      "clean_cut_times_seconds": [
+        7.333
+      ],
+      "effect_windows_seconds": {
+        "aspect_squeeze": [
+          0.0,
+          1.133
+        ],
+        "twirl_1": [
+          3.55,
+          3.82
+        ],
+        "twirl_2": [
+          4.17,
+          4.44
+        ],
+        "whip_1": [
+          4.82,
+          5.05
+        ],
+        "whip_2": [
+          6.08,
+          6.31
+        ],
+        "final_hold": [
+          7.333,
+          8.356
+        ]
+      },
+      "accent_bgr": [
+        86,
+        210,
+        255
+      ],
+      "captions": [
+        "ASPECT SQUEEZE // BUILD",
+        "ACTION MATCH // VELOCITY CUTS",
+        "TWIN TWIRL // ORBIT",
+        "WIDE HOLD // COOL DOWN"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        1.133,
+        3.55,
+        7.333
+      ]
+    },
+    {
+      "id": "fluid_inception",
+      "title": "FLUID_INCEPTION.EXE",
+      "track_id": "freaked-out-after-hours-slowed",
+      "track_title": "FREAKED OUT (AFTER HOURS SLOWED) — Fat Papi & prodshushy",
+      "visual_signature": "eye_match_blackout_recursive_object_portals_hub_tunnel_cutout_loop",
+      "style": "fluid_inception",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 16.808,
+      "intro_story_seconds": 2.3,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/instagram_DbVIzOluL1k.mp4",
+      "impact_times_seconds": [
+        2.636,
+        4.104,
+        4.838,
+        5.439,
+        6.073,
+        6.807,
+        7.374,
+        7.975,
+        8.542,
+        9.309,
+        9.743,
+        10.143,
+        10.577,
+        11.211,
+        11.778,
+        12.513,
+        13.78,
+        14.481,
+        15.115,
+        15.816
+      ],
+      "clean_cut_times_seconds": [
+        15.95
+      ],
+      "effect_windows_seconds": {
+        "eye_glow": [
+          2.3,
+          3.68
+        ],
+        "headlight_match": [
+          3.68,
+          4.27
+        ],
+        "recursive_1": [
+          4.57,
+          5.57
+        ],
+        "headlight_zoom": [
+          5.95,
+          6.88
+        ],
+        "recursive_2": [
+          7.25,
+          8.63
+        ],
+        "tire_rings": [
+          9.18,
+          10.3
+        ],
+        "hub_tunnel": [
+          10.47,
+          11.89
+        ],
+        "rear_push": [
+          11.89,
+          13.55
+        ],
+        "elastic_split": [
+          13.55,
+          14.08
+        ],
+        "liquid_whip": [
+          14.36,
+          14.6
+        ],
+        "final_hold": [
+          14.6,
+          15.12
+        ],
+        "cutout_return": [
+          15.12,
+          15.95
+        ],
+        "loop_return": [
+          15.95,
+          16.808
+        ]
+      },
+      "accent_bgr": [
+        72,
+        191,
+        255
+      ],
+      "captions": [
+        "SUBJECT SCAN // EYES CHARGING",
+        "MATCH MORPH // SIGNAL BECOMES OBJECT",
+        "RECURSIVE PORTAL // INSIDE THE MOMENT",
+        "HUB TUNNEL // NEXT SCENE LOADED",
+        "CUTOUT RETURN // LOOP CLOSED"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        2.3,
+        4.57,
+        9.18,
+        15.12
+      ]
+    },
+    {
+      "id": "wave_surge",
+      "title": "TIDE_SURGE.EXE",
+      "track_id": "automotivo-amar-ma-ma-ma",
+      "track_title": "Automotivo Amar, Ma Ma Ma — Dj Brunin XM, Bibi Babydoll & MC Erikah",
+      "visual_signature": "integrated_arch_speed_tide_push_clean_peak_settle",
+      "style": "wave_surge",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 10.6,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/instagram_DCeZ5Llq-OA.mp4",
+      "impact_times_seconds": [
+        1.533,
+        3.135,
+        5.074,
+        5.968,
+        6.85,
+        7.744,
+        8.626,
+        9.52
+      ],
+      "clean_cut_times_seconds": [
+        9.961
+      ],
+      "effect_windows_seconds": {
+        "tide_1": [
+          1.263,
+          1.533
+        ],
+        "radial_1": [
+          3.135,
+          3.355
+        ],
+        "tide_2": [
+          4.804,
+          5.074
+        ],
+        "ribbon_1": [
+          5.625,
+          5.968
+        ],
+        "tide_3": [
+          7.474,
+          7.744
+        ],
+        "radial_2": [
+          8.626,
+          8.846
+        ],
+        "final_hold": [
+          9.961,
+          10.6
+        ]
+      },
+      "accent_bgr": [
+        78,
+        185,
+        255
+      ],
+      "captions": [
+        "CUSTOM CURVE // PRELOAD",
+        "ARCH SURGE // CLEAN LANDING",
+        "TIDE PUSH // MOMENT TRANSFER",
+        "RIBBON WAVE // MULTI PULSE",
+        "BRAKE // HOLD THE FRAME"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        1.533,
+        5.074,
+        7.474,
+        9.961
+      ]
+    },
+    {
+      "id": "pulse_chain",
+      "title": "RHYTHM_RIBBON.EXE",
+      "track_id": "uh-uh-ah-ah",
+      "track_title": "UH UH AH AH — CHASHKAKEFIRA, yash1oka & DJ YHR",
+      "visual_signature": "three_four_pulse_curve_ribbon_roll_staccato_trough_holds",
+      "style": "pulse_chain",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 7.667,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/instagram_DCMYSbDq1j5.mp4",
+      "impact_times_seconds": [
+        1.451,
+        2.485,
+        3.286,
+        4.563,
+        5.48,
+        6.409,
+        6.989
+      ],
+      "clean_cut_times_seconds": [
+        7.326
+      ],
+      "effect_windows_seconds": {
+        "radial_1": [
+          1.451,
+          1.651
+        ],
+        "ribbon_1": [
+          2.18,
+          2.485
+        ],
+        "tide_1": [
+          3.016,
+          3.286
+        ],
+        "ribbon_2": [
+          4.24,
+          4.563
+        ],
+        "tide_2": [
+          5.21,
+          5.48
+        ],
+        "radial_2": [
+          6.409,
+          6.629
+        ],
+        "final_hold": [
+          7.326,
+          7.667
+        ]
+      },
+      "accent_bgr": [
+        91,
+        173,
+        255
+      ],
+      "captions": [
+        "MOTION PATH // LOCKED",
+        "THREE PULSE // ONE TAKE",
+        "RIBBON ROLL // NO HARD FREEZE",
+        "FOUR PULSE // RHYTHM CHAIN",
+        "TROUGH HOLD // SHARP SUBJECT"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        2.18,
+        3.286,
+        5.21,
+        7.326
+      ]
+    },
+    {
+      "id": "glide_chain",
+      "title": "SUBJECT_GLIDE.EXE",
+      "track_id": "empire-ogryzek",
+      "track_title": "EMPIRE — Ogryzek",
+      "visual_signature": "subject_anchor_rise_fall_glide_radial_crest_direction_flip",
+      "style": "glide_chain",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 9.717,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/instagram_DCCFCjoKmH4.mp4",
+      "impact_times_seconds": [
+        1.916,
+        3.123,
+        4.586,
+        5.782,
+        6.513,
+        7.477,
+        8.684
+      ],
+      "clean_cut_times_seconds": [
+        9.416
+      ],
+      "effect_windows_seconds": {
+        "tide_1": [
+          2.853,
+          3.123
+        ],
+        "radial_1": [
+          4.586,
+          4.806
+        ],
+        "tide_2": [
+          6.243,
+          6.513
+        ],
+        "ribbon_1": [
+          7.18,
+          7.477
+        ],
+        "tide_3": [
+          8.414,
+          8.684
+        ],
+        "final_hold": [
+          9.416,
+          9.717
+        ]
+      },
+      "accent_bgr": [
+        156,
+        220,
+        255
+      ],
+      "captions": [
+        "SUBJECT ANCHOR // CENTRED",
+        "RISE CURVE // LAUNCH",
+        "FALL CURVE // BRAKE",
+        "DIRECTION FLIP // SAME SUBJECT",
+        "FINAL GLIDE // HOLD"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        1.916,
+        4.586,
+        7.18,
+        9.416
+      ]
+    },
+    {
+      "id": "match_flow",
+      "title": "ANCHOR_FLOW.EXE",
+      "track_id": "big-dawgs",
+      "track_title": "Big Dawgs — Hanumankind & Kalmi",
+      "visual_signature": "anchor_match_vector_carry_pan_orbit_single_spin_clean_brake",
+      "style": "match_flow",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 10.367,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/instagram_C-nHGutoVYB.mp4",
+      "impact_times_seconds": [
+        0.673,
+        1.997,
+        3.68,
+        4.377,
+        5.016,
+        5.712,
+        6.397,
+        7.047,
+        7.721,
+        8.394
+      ],
+      "clean_cut_times_seconds": [
+        9.718
+      ],
+      "effect_windows_seconds": {
+        "tide_1": [
+          1.727,
+          1.997
+        ],
+        "whip_1": [
+          3.45,
+          3.68
+        ],
+        "tide_2": [
+          4.747,
+          5.016
+        ],
+        "radial_1": [
+          5.712,
+          5.932
+        ],
+        "whip_2": [
+          6.18,
+          6.397
+        ],
+        "spin_1": [
+          6.84,
+          7.047
+        ],
+        "ribbon_1": [
+          7.451,
+          7.721
+        ],
+        "tide_3": [
+          8.124,
+          8.394
+        ],
+        "final_hold": [
+          9.718,
+          10.367
+        ]
+      },
+      "accent_bgr": [
+        46,
+        176,
+        255
+      ],
+      "captions": [
+        "ANCHOR MATCH // TARGET LOCKED",
+        "VECTOR CARRY // CUT IN MOTION",
+        "PAN ORBIT // DIRECTION FLIP",
+        "ONE SPIN // RESTRAINED",
+        "BRAKE // ANCHOR SHARP"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        1.997,
+        4.747,
+        6.84,
+        9.718
+      ]
+    },
+    {
+      "id": "arch_chain",
+      "title": "BOOMERANG_MATCH.EXE",
+      "track_id": "clima-lindo",
+      "track_title": "CLIMA LINDO (Extreme Slowed) — GXMZ & Repsaj",
+      "visual_signature": "object_match_value_arch_rise_fall_single_vector_loop",
+      "style": "arch_chain",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 8.333,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/instagram_DQdck1bk15l.mp4",
+      "impact_times_seconds": [
+        1.433,
+        2.067,
+        2.767,
+        3.433,
+        4.133,
+        4.8,
+        5.567,
+        6.233,
+        6.9,
+        7.533
+      ],
+      "accent_bgr": [
+        212,
+        231,
+        235
+      ],
+      "captions": [
+        "SERIAL CURVE // SOURCE MOMENTS LOADED",
+        "VALUE ARCH // FORWARD THEN REVERSE",
+        "RISE FALL // MATCH VECTOR CONTINUES",
+        "BENCH LOOP // FIRST SHOT RETURNS"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        1.433,
+        4.133,
+        7.533
+      ]
+    },
+    {
+      "id": "subject_boomerang",
+      "title": "SUBJECT_BOOMERANG.EXE",
+      "track_id": "shake-it-to-the-max-fly-remix",
+      "track_title": "Shake It To The Max (FLY) [Remix] — MOLIY, Silent Addy, Skillibeng & Shenseea",
+      "visual_signature": "subject_centered_value_arch_quad_rebound_rise_fall_radial_chain",
+      "style": "subject_boomerang",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 8.233,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/instagram_DKZgKxgig9B.mp4",
+      "impact_times_seconds": [
+        0.767,
+        1.333,
+        1.933,
+        2.533,
+        3.167,
+        3.733,
+        4.4,
+        5.0,
+        5.633,
+        6.233,
+        6.833,
+        7.467
+      ],
+      "accent_bgr": [
+        86,
+        210,
+        255
+      ],
+      "captions": [
+        "SUBJECT ANCHOR // CENTRE LOCKED",
+        "FOUR BOOMERANGS // VIEWPOINT BOUNCE",
+        "FALL REBOUND // OVERSHOOT HOOK",
+        "RADIAL RETURN // SUBJECT HOLDS"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        2.533,
+        5.633,
+        7.467
+      ]
+    },
+    {
+      "id": "cart_drift",
+      "title": "TROLLEY_DRIVE.EXE",
+      "track_id": "dc-cc-cart-edit-audio",
+      "track_title": "UNKNOWN — DCcc cart edit audio",
+      "visual_signature": "object_scale_ladder_charge_release_lens_mirror_tunnel_orbit_macro_lock",
+      "style": "cart_drift",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 11.933,
+      "intro_story_seconds": 5.166,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/instagram_DCcc-0rMntt.mp4",
+      "impact_times_seconds": [
+        0.697,
+        1.974,
+        3.251,
+        5.166,
+        6.443,
+        7.720,
+        8.997,
+        10.275,
+        11.552
+      ],
+      "clean_cut_times_seconds": [
+        3.889
+      ],
+      "effect_windows_seconds": {
+        "object_study": [
+          0.0,
+          3.889
+        ],
+        "electric_charge": [
+          3.889,
+          5.166
+        ],
+        "drop_release": [
+          5.100,
+          5.805
+        ],
+        "circular_lens": [
+          6.900,
+          7.220
+        ],
+        "vertical_mirror": [
+          7.460,
+          7.920
+        ],
+        "wheel_tunnel": [
+          8.040,
+          8.997
+        ],
+        "tilted_orbit": [
+          8.997,
+          10.275
+        ],
+        "final_detail_lock": [
+          10.275,
+          11.933
+        ]
+      },
+      "accent_bgr": [
+        228,
+        228,
+        228
+      ],
+      "captions": [
+        "OBJECT STUDY // SCALE LADDER",
+        "ELECTRIC CHARGE // HOLD",
+        "DROP RELEASE // MOTION UNLOCKED",
+        "CIRCULAR LENS // SUBJECT MAGNIFIED",
+        "VERTICAL MIRROR // AXIS LOCK",
+        "WHEEL TUNNEL // DEPTH PULSE",
+        "TILTED ORBIT // VECTOR CARRY",
+        "MACRO DETAIL // FINAL LOCK"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        3.889,
+        5.166,
+        6.900,
+        7.460,
+        8.040,
+        8.997,
+        10.275
+      ]
+    },
+    {
+      "id": "gigachad",
+      "title": "CHAD_PROTOCOL.EXE",
+      "track_id": "satisfaction-benny-benassi",
+      "track_title": "Satisfaction — Benny Benassi",
+      "visual_signature": "landmark_jaw_cheek_brow_warp_monochrome_face_cut_escalation",
+      "style": "gigachad",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 19.0,
+      "duration_seconds": 16.325,
+      "intro_story_seconds": 4.156,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/instagram_DcAimW1ou94.mp4",
+      "impact_times_seconds": [
+        4.156,
+        5.492,
+        6.838,
+        8.179,
+        9.514,
+        10.855,
+        12.196,
+        13.537,
+        14.872
+      ],
+      "clean_cut_times_seconds": [
+        15.523
+      ],
+      "accent_bgr": [
+        218,
+        218,
+        218
+      ],
+      "captions": [
+        "BASELINE FACE // GEOMETRY LOCAL",
+        "PRE-DROP // JAW MODEL ARMING",
+        "CHAD PROTOCOL // LANDMARK LOCK",
+        "CHEEKBONES // STRUCTURE MAX",
+        "FINAL FORM // HOLD THE STARE"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        3.736,
+        4.156,
+        9.514,
+        14.872
+      ]
+    },
+    {
+      "id": "final_form",
+      "title": "FINAL_FORM",
+      "track_id": "final-form-original",
+      "track_title": "FINAL_FORM Original",
+      "visual_signature": "monochrome_ghost_triptych",
+      "style": "final_form",
+      "layout": "right_portrait",
+      "pre_roll_seconds": 18.0,
+      "duration_seconds": 5.6,
+      "media_start_seconds": 0.0,
+      "music_file": "assets/local/music/final_form.wav",
+      "impact_times_seconds": [],
+      "accent_bgr": [
+        89,
+        61,
+        255
+      ],
+      "captions": [
+        "OPTICAL SHIELD REMOVED",
+        "IDENTITY UNLOCKED",
+        "AURA: OVERFLOW"
+      ],
+      "caption_times_seconds": [
+        0.0,
+        1.8,
+        3.8
+      ]
+    }
+  ]
+}
